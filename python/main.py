@@ -2,6 +2,15 @@ class Npc:
 	def __init__(self, name, talk):
 		self.name=name
 		self.talk=talk
+	def speak(self):
+		return self.talk
+
+class Town:
+	def __init__(self, name):
+		self.name=name
+		self.npcs=[]
+	def addNpc(self, npc):
+		self.npcs.append(npc)
 
 class Weapon:
 	def __init__(self, name):
@@ -29,6 +38,7 @@ class Party:
 		self.money = 1000
 	def addMember(self, actor):
 		self.actors.append(actor)
+
 
 def main():
 	print("Welcome to the Town")
