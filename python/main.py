@@ -16,3 +16,10 @@ class Party:
 		self.inventory = []
 	def addMember(self, actor):
 		self.actors.append(actor)
+
+
+
+def main():
+	print("wizardri")
+
+main()
