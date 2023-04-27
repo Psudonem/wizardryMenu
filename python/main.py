@@ -1,8 +1,17 @@
+class Weapon:
+	def __init__(self, name):
+		self.name = name
+
 class Actor:
 	def __init__(self, name):
 		self.hp = 10
 		self.name = name
 		self.mp = 10
+		self.weapon= None
+
+	def equipWeapon(self,weapon):
+		self.weapon = weapon
+
 
 class Item:
 	def __init__(self, name):
