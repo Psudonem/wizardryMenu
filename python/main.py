@@ -11,7 +11,9 @@ class Town:
 		self.npcs=[]
 	def addNpc(self, npc):
 		self.npcs.append(npc)
-
+	def printNpcs(self):
+		for n,i in enumerate(self.npcs):
+			print(str(i)+") "+n.name)
 class Weapon:
 	def __init__(self, name):
 		self.name = name
