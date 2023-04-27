@@ -1,3 +1,3 @@
 git add .
-git commit -m "first update"
+git commit -m "update"
 git push
